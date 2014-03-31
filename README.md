@@ -3,7 +3,11 @@
 
 ## What It Does
 
-`DEUserDefaults` takes the hassle out of dealing with `NSUserDefaults`. Just use brackets/subscripting and forget about `-standardUserDefaults` or `-objectForKey:`/`-setObject:forKey:`. For example, `DEUserDefaults[@"key"] = @"value"`.
+`DEUserDefaults` takes the hassle out of dealing with `NSUserDefaults`. Just use brackets/subscripting and forget about `-standardUserDefaults` or `-objectForKey:`/`-setObject:forKey:`.
+
+For example, you can just do something like:
+
+	DEUserDefaults[@"key"] = @"value";
 
 ## How It Works
 
