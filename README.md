@@ -3,11 +3,20 @@
 
 ## What It Does
 
-`DEUserDefaults` takes the hassle out of dealing with `NSUserDefaults`. Just use brackets/subscripting and forget about `-standardUserDefaults` or `-objectForKey:`/`-setObject:forKey:`.
+**You can do this:**
 
-For example, you can just do something like:
-
+	NSString *value = DEUserDefaults[@"key"];
 	DEUserDefaults[@"key"] = @"value";
+	[DEUserDefaults synchronize];
+
+**instead of this:**
+
+	NSString *value = [[NSUserDefaults standardUserDefaults] objectForKey:@"key"];
+	[[NSUserDefaults standardUserDefaults] setObject:@"value" forKey:@"key"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+
+`DEUserDefaults` takes the hassle out of dealing with `NSUserDefaults`. Just use brackets / subscripting and forget about `-standardUserDefaults` or `-objectForKey:`/`-setObject:forKey:`.
+
 
 ## How It Works
 
