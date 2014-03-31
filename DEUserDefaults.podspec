@@ -6,12 +6,12 @@ Pod::Spec.new do |s|
   s.author       = { 'Dream Engine Interactive, Inc.' => 'contact@dreamengine.com' }
   s.social_media_url = 'https://twitter.com/dreamengine'
   
-  s.summary      = 'Easy-as-pie UINib caching for UITableViewCells.'
-  s.description  = ""
+  s.summary      = 'Easy NSUserDefaults subscripting: DEUserDefaults[@"key"] = @"value"'
+  s.description  = "DEUserDefaults takes the hassle out of dealing with NSUserDefaults. Just use brackets/subscripting and forget about -standardUserDefaults or -objectForKey:/-setObject:forKey:. For example, DEUserDefaults[@\"key\"] = @\"value\"."
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
-  s.frameworks   = ['Foundation', 'UIKit']
+  s.frameworks   = ['Foundation']
   s.source       = { :git => 'https://github.com/dreamengine/DEUserDefaults.git', :tag => s.version.to_s }
   s.source_files = 'src/*.{h,m}'
 
